@@ -14,11 +14,13 @@
 <script src="{{ 'main-product.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'update-slider.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'about.js' | asset_url }}" defer="defer"></script>
- <script src="{{ 'esyncer.js' | asset_url }}" defer="defer"></script>
+
 
 {% for tag in product.tags %}									
-  {%- if tag == "4over" -%}
-	<script>console.log("4over")</script>
+  {%- if tag == "sinalite" -%}
+    <script src="{{ 'esyncer-sinalite.js' | asset_url }}" defer="defer"></script>
+  {%- else -%}
+    <script src="{{ 'esyncer.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 {% endfor %}
 
