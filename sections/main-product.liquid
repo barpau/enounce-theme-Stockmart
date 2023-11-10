@@ -16,9 +16,11 @@
 <script src="{{ 'about.js' | asset_url }}" defer="defer"></script>
  <script src="{{ 'esyncer.js' | asset_url }}" defer="defer"></script>
 
-{%- if product.tag == "4over" -%}
+{% for tag in product.tags %}									
+  {%- if tag == "4over" -%}
 	<script>console.log("4over")</script>
-{%- endif -%}
+  {%- endif -%}
+{% endfor %}
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
