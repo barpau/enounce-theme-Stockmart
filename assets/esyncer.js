@@ -1,27 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   let scriptEle2 = document.createElement("script");
-  scriptEle2.setAttribute("src", "https://app.esyncer.com/js/fo.js?v=" + Math.floor(Math.random() * 100000000));
+  let template4over = document.getElementsByClassName("template-product-4over_product");
+  let templateSinalite = document.getElementsByClassName("template-product-sinalite_product");
+  if(template4over) {
+    scriptEle2.setAttribute("src", "https://app.esyncer.com/js/fo.js?v=" + Math.floor(Math.random() * 100000000));
+  } else if (templateSinalite){
+    console.log("sinalite 2")
+    scriptEle2.setAttribute("src", "https://app.esyncer.com/js/sl.js?v=" + Math.floor(Math.random() * 100000000));
+  } else {
+
+  }
   document.body.appendChild(scriptEle2);
-  getProductTags();
 });
-
-
-
-function getProductTags() {
-// Get the URL of the parent window
-  var parentURL = window.opener.document.location.href;
-
-// Get the product handle from the parent window URL
-  var productHandle = parentURL.split("/").pop();
-
-  Shopify.getProduct(productHandle, function (product) {
-    var tags = product.tags.split(","); // Gets the product tags and splits them into an array
-
-// Do something with the obtained labels
-    console.log(tags); // Print the labels in the browser console
-  });
-}
-
-
-
-
