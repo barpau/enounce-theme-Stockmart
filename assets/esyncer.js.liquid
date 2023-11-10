@@ -1,11 +1,11 @@
-console.log("works");
+
 {% for tag in product.tags %}									
   {%- if tag == "4over" -%}
   document.addEventListener("DOMContentLoaded", function(event) {
   let scriptEle2 = document.createElement("script");
   scriptEle2.setAttribute("src", "https://app.esyncer.com/js/fo.js?v=" + Math.floor(Math.random() * 100000000));
   document.body.appendChild(scriptEle2);
-  getProductTags();
+  console.log("4over");
 });
   {%- endif -%}
   {%- if tag == "sinalite" -%}
@@ -13,7 +13,7 @@ console.log("works");
   let scriptEle2 = document.createElement("script");
   scriptEle2.setAttribute("src", "https://app.esyncer.com/js/sinalite.js?v=" + Math.floor(Math.random() * 100000000));
   document.body.appendChild(scriptEle2);
-  getProductTags();
+  console.log("sinalite");
 });
     {%- endif -%}
 {% endfor %}
