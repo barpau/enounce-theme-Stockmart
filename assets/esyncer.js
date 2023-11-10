@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function getProductTags() {
 // Get the URL of the parent window
-  var parentURL = window.opener.location.href;
+  var parentURL = window.opener.document.location.href;
 
 // Get the product handle from the parent window URL
   var productHandle = parentURL.split("/").pop();
