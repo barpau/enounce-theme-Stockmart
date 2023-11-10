@@ -1,0 +1,38 @@
+{
+  "type": "header",
+  "name": "t:sections.header.settings.header-group.label",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "dropdown": {
+          "type": "dropdown",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "dropdown"
+      ],
+      "settings": {
+        "header_type": "bottom-menu",
+        "logo_width": 90,
+        "menu": "main-menu",
+        "enable_country_selector": true,
+        "enable_search": true
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "height": 40,
+        "color_scheme": "1",
+        "text": "<p>For example, a test of the announcement of some news<\/p>"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
