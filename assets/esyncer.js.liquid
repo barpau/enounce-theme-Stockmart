@@ -4,11 +4,9 @@
   let templateSinalite = document.getElementsByClassName("template-product-sinalite_product");
   if(template4over) { 
   scriptEle2.setAttribute("src", "https://app.esyncer.com/js/fo.js?v=" + Math.floor(Math.random() * 100000000));
-  } else if (templateSinalite){
+  } else {
     console.log("sinalite 2")
   scriptEle2.setAttribute("src", "https://app.esyncer.com/js/sl.js?v=" + Math.floor(Math.random() * 100000000));
-  } else {
-
   }
   document.body.appendChild(scriptEle2);
   });
