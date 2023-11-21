@@ -2,7 +2,7 @@
   "type": "footer",
   "name": "t:sections.footer.settings.footer-group.label",
   "sections": {
-    "7e92fe79-fd8f-4bc8-9072-3211d9f858be": {
+    "f2e74e3d-7f7a-4c64-a661-37db3a209f81": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "{{esyncer_meta_object.id_session}}"
@@ -70,7 +70,7 @@
     }
   },
   "order": [
-    "7e92fe79-fd8f-4bc8-9072-3211d9f858be",
+    "f2e74e3d-7f7a-4c64-a661-37db3a209f81",
     "footer"
   ]
 }
