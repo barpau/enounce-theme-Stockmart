@@ -2,6 +2,12 @@
   "type": "footer",
   "name": "t:sections.footer.settings.footer-group.label",
   "sections": {
+    "7e92fe79-fd8f-4bc8-9072-3211d9f858be": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{esyncer_meta_object.id_session}}"
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -35,6 +41,8 @@
         "footer-4": {
           "type": "contacts",
           "settings": {
+            "description": "Description",
+            "contact_info": "<p>Contact info<\/p>"
           }
         }
       },
@@ -48,14 +56,21 @@
       "settings": {
         "color_scheme": "background-2",
         "show_border": false,
+        "enable_open_menu": false,
         "enable_country_selector": false,
         "enable_language_selector": true,
         "payment_enable": true,
-        "show_social": false
+        "enable_follow_on_shop": true,
+        "show_social": false,
+        "show_policy": false,
+        "enable_subscribe": true,
+        "heading": "Heading for subscribe form",
+        "button_style": "primary"
       }
     }
   },
   "order": [
+    "7e92fe79-fd8f-4bc8-9072-3211d9f858be",
     "footer"
   ]
 }
