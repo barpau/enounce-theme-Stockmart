@@ -179,6 +179,12 @@
         "custom_liquid": "<div class=\"esyncer_4over_eddm\" client=\"ENOUNCE_FOUROVER\"><\/div>"
       }
     },
+    "988d7b71-7842-4dbb-add7-43cc2c9bcdcd": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<input type=\"date\" id=\"date\">"
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -229,6 +235,7 @@
   "order": [
     "main",
     "5da8ba92-4ce1-4b70-875c-0e245ccbbb3d",
+    "988d7b71-7842-4dbb-add7-43cc2c9bcdcd",
     "product-recommendations",
     "featured-blog"
   ]
